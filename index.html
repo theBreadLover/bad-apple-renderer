@@ -8,34 +8,9 @@
 				content="ie=edge">
 	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 	<title>Bad Apple Renderer</title>
-	<link rel="stylesheet"
-				href="/style.css">
 </head>
 <body>
-	<header>
-		<h1>Bad Apple Renderer</h1>
-		<p>FFmpeg WASM + TypeScript + Emoji Frames</p>
-	</header>
-	
-	<main>
-		<div class="progress-wrapper">
-			<div id="progress" class="progress-bar"></div>
-		</div>
-		
-		<section class="controls">
-			<label class="file-input">
-				<span>Select Video</span>
-				<input id="file" type="file" accept="video/*" />
-			</label>
-			
-			<button id="playBtn" disabled>Play</button>
-			<button id="pauseBtn" disabled>Pause</button>
-		</section>
-		
-		<section class="output-container">
-			<pre id="output"></pre>
-		</section>
-	</main>
+	<div id="root"></div>
+	<script type="module" src="/src/main.tsx"></script>
 </body>
-<script type="module" src="/src/main.ts"></script>
 </html>
